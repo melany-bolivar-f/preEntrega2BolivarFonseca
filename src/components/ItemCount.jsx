@@ -1,7 +1,7 @@
 import React,{useState} from "react"
 
 const ItemCount= ({initial,stock,onAdd})=>{
-    console.log("hola soy el contador")
+    //console.log("hola soy el contador")
     const [count,setCount]=useState(initial)
         const add=()=>{
             if (count<stock){
@@ -23,7 +23,7 @@ const ItemCount= ({initial,stock,onAdd})=>{
                 <span className="btn" >{count}</span>
                 <button className="btn btn-success" onClick={add}>+</button>
             </div>
-            <button className="btn btn-primary mt-2" onClick={addtocart} disabled={count===0}>comprar</button>
+            <button className="btn btn-secondary mt-2" onClick={addtocart} disabled={count===0}>comprar</button>
 
         </div>
     )
